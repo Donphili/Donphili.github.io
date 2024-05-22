@@ -1,0 +1,86 @@
+/* Add this to a separate file named 'style.css' and link it in your HTML head section */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Dark background for contrast */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header styling with 3D effect */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    /* 3D effect */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transform: translateY(-5px);
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none;
+    background: #444;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    /* 3D effect on hover */
+    transition: transform 0.3s ease;
+}
+
+nav ul a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* Section styling with subtle 3D effect */
+section {
+    padding: 20px;
+    margin: 0 10%;
+    background: #1c1c1c; /* Slightly lighter than body for depth */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+}
+
+/* Contact and footer styling with 3D effect */
+section#contact, footer {
+    background: #333;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+    }
+    section {
+        margin: 0 5%;
+    }
+}
